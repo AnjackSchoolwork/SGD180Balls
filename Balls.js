@@ -20,7 +20,7 @@ function generateBalls(num) {
 		var tempVector = getRandomVector2d()
 		var tempDimension = getRandomInt(10, 100)
 		var tempSprite = new Sprite(scene, "img/redBall.png", tempDimension, tempDimension)
-		tempSprite.setPosition(400, 300)
+		tempSprite.setPosition(getRandomInt(1, 800), getRandomInt(1, 600))
 		tempSprite.setMoveAngle(tempVector.angle)
 		tempSprite.setSpeed(tempVector.magnitude)
 		tempArray.push(tempSprite)
